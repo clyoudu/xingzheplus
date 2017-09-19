@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="github.vabshroo.xingzheplus.dao.WorkoutPropMapper">
+  <resultMap id="BaseResultMap" type="github.vabshroo.xingzheplus.pojo.WorkoutProp">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="workout_id" jdbcType="BIGINT" property="workoutId" />
+    <result column="prop_name" jdbcType="VARCHAR" property="propName" />
+    <result column="prop_value" jdbcType="VARCHAR" property="propValue" />
+  </resultMap>
+</mapper>

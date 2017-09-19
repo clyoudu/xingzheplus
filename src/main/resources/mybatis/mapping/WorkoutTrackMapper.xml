@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="github.vabshroo.xingzheplus.dao.WorkoutTrackMapper">
+  <resultMap id="BaseResultMap" type="github.vabshroo.xingzheplus.pojo.WorkoutTrack">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="workout_id" jdbcType="BIGINT" property="workoutId" />
+    <result column="track_no" jdbcType="BIGINT" property="trackNo" />
+    <result column="gps_lat" jdbcType="DOUBLE" property="gpsLat" />
+    <result column="gps_lon" jdbcType="DOUBLE" property="gpsLon" />
+    <result column="gcj_lat" jdbcType="DOUBLE" property="gcjLat" />
+    <result column="gcj_lon" jdbcType="DOUBLE" property="gcjLon" />
+    <result column="bd_lat" jdbcType="DOUBLE" property="bdLat" />
+    <result column="bd_lon" jdbcType="DOUBLE" property="bdLon" />
+  </resultMap>
+</mapper>

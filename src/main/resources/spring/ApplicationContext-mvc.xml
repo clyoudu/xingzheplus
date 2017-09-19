@@ -11,7 +11,15 @@
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!-- 注解扫描 -->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven>
+        <!--配置@ResponseBody由fastjson解析-->
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="defaultCharset" value="UTF-8"/>
+            </bean>
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
     <context:component-scan base-package="github.vabshroo.xingzheplus.controller"/>
 
     <!-- 配置文件 -->

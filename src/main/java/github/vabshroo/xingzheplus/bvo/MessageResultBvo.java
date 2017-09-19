@@ -30,6 +30,10 @@ public class MessageResultBvo implements Serializable {
         return bvo(CODE_ERR,msg,null);
     }
 
+    public static MessageResultBvo msg(String msg){
+        return bvo(CODE_SUC,msg,null);
+    }
+
     public static MessageResultBvo err(){
         return err(MSG_ERR);
     }
