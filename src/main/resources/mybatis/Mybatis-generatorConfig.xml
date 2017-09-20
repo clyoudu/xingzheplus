@@ -27,7 +27,7 @@
         <javaClientGenerator targetPackage="github.vabshroo.xingzheplus.dao" targetProject="src/main/java" type="XMLMAPPER" />
 
         <!-- 要生成的那些表 -->
-        <table tableName="user_info"
+        <!--<table tableName="user_info"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"
@@ -58,14 +58,14 @@
                enableSelectByExample="false"
                selectByExampleQueryId="false">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
-        </table>
-        <table tableName="workout_track"
+        </table>-->
+        <table tableName="workout_view"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"
                enableSelectByExample="false"
                selectByExampleQueryId="false">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+            <generatedKey column="workout_id" sqlStatement="Mysql" identity="true"/>
         </table>
     </context>
 </generatorConfiguration>

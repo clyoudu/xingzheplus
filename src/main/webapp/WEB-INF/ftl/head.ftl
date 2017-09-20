@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>行者+</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="favicon_16.ico"/>
-    <link rel="bookmark" href="favicon_16.ico"/>
+    <link rel="shortcut icon" href="../statics/img/favicon.png"/>
+    <link rel="bookmark" href="../statics/img/favicon.png"/>
     <!-- site css -->
     <link rel="stylesheet" href="../statics/boot-flat/css/site.min.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
@@ -79,7 +79,7 @@
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-dashboard sub-list"></i>Dashboard </a></li>
                 <li class="list-group-item"><a href="${base}/crawler"><i class="glyphicon glyphicon-refresh sub-list"></i>数据同步 </a></li>
                 <li class="list-group-item"><i class="fa fa-pie-chart"></i> <b>图表</b></li>
-                <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-road sub-list"></i> 里程</a></li>
+                <li class="list-group-item"><a href="${base}/distance"><i class="glyphicon glyphicon-road sub-list"></i> 里程</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-time sub-list"></i> 时间</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-flash sub-list"></i> 速度</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-heart sub-list"></i> 心率</a></li>
