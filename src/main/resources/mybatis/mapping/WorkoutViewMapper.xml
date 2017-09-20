@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="github.vabshroo.xingzheplus.dao.WorkoutViewMapper">
+  <resultMap id="BaseResultMap" type="github.vabshroo.xingzheplus.pojo.WorkoutView">
+    <result column="workout_id" jdbcType="BIGINT" property="workoutId" />
+    <result column="down_duration" jdbcType="LONGVARCHAR" property="downDuration" />
+    <result column="is_valid" jdbcType="LONGVARCHAR" property="isValid" />
+    <result column="poi" jdbcType="LONGVARCHAR" property="poi" />
+    <result column="source" jdbcType="LONGVARCHAR" property="source" />
+    <result column="uuid" jdbcType="LONGVARCHAR" property="uuid" />
+    <result column="cadence_source" jdbcType="LONGVARCHAR" property="cadenceSource" />
+    <result column="end_cadence" jdbcType="LONGVARCHAR" property="endCadence" />
+    <result column="max_grade" jdbcType="LONGVARCHAR" property="maxGrade" />
+    <result column="powerMax" jdbcType="LONGVARCHAR" property="powermax" />
+    <result column="start_wheel" jdbcType="LONGVARCHAR" property="startWheel" />
+    <result column="credits" jdbcType="LONGVARCHAR" property="credits" />
+    <result column="flat_distance" jdbcType="LONGVARCHAR" property="flatDistance" />
+    <result column="modify_time" jdbcType="LONGVARCHAR" property="modifyTime" />
+    <result column="segments" jdbcType="LONGVARCHAR" property="segments" />
+    <result column="upload_time" jdbcType="LONGVARCHAR" property="uploadTime" />
+    <result column="down_distance" jdbcType="LONGVARCHAR" property="downDistance" />
+    <result column="is_like" jdbcType="LONGVARCHAR" property="isLike" />
+    <result column="pic_url" jdbcType="LONGVARCHAR" property="picUrl" />
+    <result column="segment_index" jdbcType="LONGVARCHAR" property="segmentIndex" />
+    <result column="user_name" jdbcType="LONGVARCHAR" property="userName" />
+    <result column="avg_wheel_rpm" jdbcType="LONGVARCHAR" property="avgWheelRpm" />
+    <result column="encoding_points" jdbcType="LONGVARCHAR" property="encodingPoints" />
+    <result column="max_cadence" jdbcType="LONGVARCHAR" property="maxCadence" />
+    <result column="powerIF" jdbcType="LONGVARCHAR" property="powerif" />
+    <result column="start_time" jdbcType="LONGVARCHAR" property="startTime" />
+    <result column="create_time" jdbcType="LONGVARCHAR" property="createTime" />
+    <result column="flat_avg_speed" jdbcType="LONGVARCHAR" property="flatAvgSpeed" />
+    <result column="min_grade" jdbcType="LONGVARCHAR" property="minGrade" />
+    <result column="powerVI" jdbcType="LONGVARCHAR" property="powervi" />
+    <result column="title" jdbcType="LONGVARCHAR" property="title" />
+    <result column="down_avg_speed" jdbcType="LONGVARCHAR" property="downAvgSpeed" />
+    <result column="is_export" jdbcType="LONGVARCHAR" property="isExport" />
+    <result column="original_duration" jdbcType="LONGVARCHAR" property="originalDuration" />
+    <result column="segments_sport" jdbcType="LONGVARCHAR" property="segmentsSport" />
+    <result column="user" jdbcType="LONGVARCHAR" property="user" />
+    <result column="avg_speed" jdbcType="LONGVARCHAR" property="avgSpeed" />
+    <result column="elevation_loss" jdbcType="LONGVARCHAR" property="elevationLoss" />
+    <result column="max_altitude" jdbcType="LONGVARCHAR" property="maxAltitude" />
+    <result column="powerFTP" jdbcType="LONGVARCHAR" property="powerftp" />
+    <result column="start_cadence" jdbcType="LONGVARCHAR" property="startCadence" />
+    <result column="comment_count" jdbcType="LONGVARCHAR" property="commentCount" />
+    <result column="extra_time" jdbcType="LONGVARCHAR" property="extraTime" />
+    <result column="max_wheel_rpm" jdbcType="LONGVARCHAR" property="maxWheelRpm" />
+    <result column="powerTSS" jdbcType="LONGVARCHAR" property="powertss" />
+    <result column="thumbnail" jdbcType="LONGVARCHAR" property="thumbnail" />
+    <result column="distance" jdbcType="LONGVARCHAR" property="distance" />
+    <result column="hidden" jdbcType="LONGVARCHAR" property="hidden" />
+    <result column="original_distance" jdbcType="LONGVARCHAR" property="originalDistance" />
+    <result column="segments_km" jdbcType="LONGVARCHAR" property="segmentsKm" />
+    <result column="up_duration" jdbcType="LONGVARCHAR" property="upDuration" />
+    <result column="avg_heartrate" jdbcType="LONGVARCHAR" property="avgHeartrate" />
+    <result column="elevation_gain" jdbcType="LONGVARCHAR" property="elevationGain" />
+    <result column="loc_source" jdbcType="LONGVARCHAR" property="locSource" />
+    <result column="powerAvg" jdbcType="LONGVARCHAR" property="poweravg" />
+    <result column="sport_change_count" jdbcType="LONGVARCHAR" property="sportChangeCount" />
+    <result column="client_id" jdbcType="LONGVARCHAR" property="clientId" />
+    <result column="end_wheel" jdbcType="LONGVARCHAR" property="endWheel" />
+    <result column="max_speed" jdbcType="LONGVARCHAR" property="maxSpeed" />
+    <result column="powerSource" jdbcType="LONGVARCHAR" property="powersource" />
+    <result column="threed_workout" jdbcType="LONGVARCHAR" property="threedWorkout" />
+    <result column="desc" jdbcType="LONGVARCHAR" property="desc" />
+    <result column="heart_source" jdbcType="LONGVARCHAR" property="heartSource" />
+    <result column="offset_lng" jdbcType="LONGVARCHAR" property="offsetLng" />
+    <result column="segments_hr" jdbcType="LONGVARCHAR" property="segmentsHr" />
+    <result column="up_distance" jdbcType="LONGVARCHAR" property="upDistance" />
+    <result column="avg_cadence" jdbcType="LONGVARCHAR" property="avgCadence" />
+    <result column="duration" jdbcType="LONGVARCHAR" property="duration" />
+    <result column="like_count" jdbcType="LONGVARCHAR" property="likeCount" />
+    <result column="point_counts" jdbcType="LONGVARCHAR" property="pointCounts" />
+    <result column="sport" jdbcType="LONGVARCHAR" property="sport" />
+    <result column="calories" jdbcType="LONGVARCHAR" property="calories" />
+    <result column="end_time" jdbcType="LONGVARCHAR" property="endTime" />
+    <result column="max_heartrate" jdbcType="LONGVARCHAR" property="maxHeartrate" />
+    <result column="powerNP" jdbcType="LONGVARCHAR" property="powernp" />
+    <result column="step" jdbcType="LONGVARCHAR" property="step" />
+    <result column="deleted" jdbcType="LONGVARCHAR" property="deleted" />
+    <result column="flat_duration" jdbcType="LONGVARCHAR" property="flatDuration" />
+    <result column="offset_lat" jdbcType="LONGVARCHAR" property="offsetLat" />
+    <result column="segments_ca" jdbcType="LONGVARCHAR" property="segmentsCa" />
+    <result column="up_avg_speed" jdbcType="LONGVARCHAR" property="upAvgSpeed" />
+  </resultMap>
+   <select id="distance" resultType="java.util.Map">
+       <![CDATA[
+       SELECT
+          SUM(CAST(distance AS UNSIGNED)) / 1000 sum_distance,
+          MAX(CAST(distance AS UNSIGNED)) / 1000 max_distance,
+          MAX(IF(CAST(end_time AS UNSIGNED) - CAST(start_time AS UNSIGNED) < 24 * 60 * 60 * 1000,CAST(distance AS UNSIGNED),0)) / 1000 max_distance_day,
+          MIN(CAST(distance AS UNSIGNED)) / 1000 min_distance_day
+       FROM
+          workout_view
+       ]]>
+   </select>
+
+    <select id="timeDistance" resultType="java.util.Map">
+        SELECT
+            DATE_FORMAT(FROM_UNIXTIME(CAST(start_time AS UNSIGNED)/1000),'%w') w,
+            DATE_FORMAT(FROM_UNIXTIME(CAST(start_time AS UNSIGNED)/1000),'%H') h,
+            IF(CAST(distance AS UNSIGNED) > 300 * 1000,300 * 1000,CAST(distance AS UNSIGNED)) / 1000 distance
+        FROM workout_view
+    </select>
+</mapper>
