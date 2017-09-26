@@ -8,4 +8,6 @@ import java.util.Map;
 public interface WorkoutViewMapper extends BaseMapper<WorkoutView> {
     List<Map<String,Object>> distance();
     List<Map<String,Object>> timeDistance();
+    List<Map<String,Object>> distanceDistribution();
+    List<Map<String,Object>> durationSum();
 }

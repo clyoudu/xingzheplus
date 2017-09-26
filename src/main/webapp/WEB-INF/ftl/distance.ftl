@@ -20,6 +20,9 @@
                 <div class="row" id="chart1" style="height: 800px">
 
                 </div>
+                <div class="row" id="chart2" style="height: 800px">
+
+                </div>
             </div>
         </div>
 </div>
@@ -168,6 +171,67 @@
     };
     var chart1 = echarts.init(document.getElementById('chart1'));
     chart1.setOption(option);
+
+    var color = ['#ED5565', '#CCD1D9', '#48CFAD'];
+    echarts.init(document.getElementById('chart2')).setOption({
+        backgroundColor: "#434A54",
+        title: {
+            text: 'UFD占比',
+            subtext: '上坡/平路/下坡',
+            x: 'center',
+            y: 'center',
+            textStyle: {
+                color:'#ccc',
+                fontWeight: 'normal',
+                fontSize: 22
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: function(params, ticket, callback) {
+                var res = params.seriesName;
+                res += '<br/>' + params.name + ' : ' + params.percent + '%';
+                return res;
+            }
+        },
+        legend: {
+            show:false
+        },
+        series: [{
+            name: 'UFD占比',
+            type: 'pie',
+            selectedMode: 'single',
+            radius: ['50%', '70%'],
+            label: {
+                normal: {
+                    position: 'inner',
+                    textStyle: {
+                        color: '#fff',
+                        fontSize: 14
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data: [{
+                value: ${distance_distribution.up},
+                name: '上坡',
+                itemStyle: {normal:{color:color[0]}}
+            }, {
+                value: ${distance_distribution.flat},
+                name: '平路',
+                itemStyle: {normal:{color:color[1]}}
+            }, {
+                value: ${distance_distribution.down},
+                name: '下坡',
+                itemStyle: {normal:{color:color[2]}}
+            }]
+        }]
+    });
+
 </script>
 
 <#include "footer.ftl" />

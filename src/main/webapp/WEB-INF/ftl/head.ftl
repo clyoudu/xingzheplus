@@ -13,6 +13,8 @@
     <script type="text/javascript" src="../statics/boot-flat/js/site.min.js"></script>
     <script type="text/javascript" src="../statics/js/xinzheplus.js"></script>
     <script type="text/javascript" src="../statics/js/echarts.js"></script>
+    <script type="text/javascript" src="../statics/js/bmap.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=53oVIOgmSIejwV7EfphPgTynOZbIiVYu"></script>
     <style>
         .sub-list{
             padding-left: 20px;
@@ -80,11 +82,11 @@
                 <li class="list-group-item"><a href="${base}/crawler"><i class="glyphicon glyphicon-refresh sub-list"></i>数据同步 </a></li>
                 <li class="list-group-item"><i class="fa fa-pie-chart"></i> <b>图表</b></li>
                 <li class="list-group-item"><a href="${base}/distance"><i class="glyphicon glyphicon-road sub-list"></i> 里程</a></li>
-                <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-time sub-list"></i> 时间</a></li>
+                <li class="list-group-item"><a href="${base}/duration"><i class="glyphicon glyphicon-time sub-list"></i> 时间</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-flash sub-list"></i> 速度</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-heart sub-list"></i> 心率</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-screenshot sub-list"></i> 踏频</a></li>
-                <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-map-marker sub-list"></i> 位置</a></li>
+                <li class="list-group-item"><a href="${base}/location"><i class="glyphicon glyphicon-map-marker sub-list"></i> 轨迹</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-calendar sub-list"></i> 月视图</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-adjust sub-list"></i> 能力</a></li>
                 <li class="list-group-item"><a href="${base}/index"><i class="glyphicon glyphicon-cloud sub-list"></i> 海拔</a></li>

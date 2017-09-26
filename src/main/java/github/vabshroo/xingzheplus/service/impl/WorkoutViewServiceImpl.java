@@ -43,4 +43,13 @@ public class WorkoutViewServiceImpl implements WorkoutViewService {
         }
         return result;
     }
+
+    @Override
+    public Map<String, Object> distanceDistribution() {
+        List<Map<String,Object>> distanceDis = workoutViewMapper.distanceDistribution();
+        if(distanceDis == null || distanceDis.isEmpty()){
+            return null;
+        }
+        return distanceDis.get(0);
+    }
 }

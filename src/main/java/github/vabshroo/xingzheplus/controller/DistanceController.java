@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @desc ChartController
  */
 @Controller
-public class ChartController extends BaseController {
+public class DistanceController extends BaseController {
 
     @Autowired
     WorkoutViewService workoutViewService;
@@ -26,6 +26,7 @@ public class ChartController extends BaseController {
     public String durationDistance(Model model){
         model.addAttribute("distance",workoutViewService.distance());
         model.addAttribute("time_distance", JSONObject.toJSONString(workoutViewService.timeDistance()));
+        model.addAttribute("distance_distribution", workoutViewService.distanceDistribution());
         return "distance";
     }
 

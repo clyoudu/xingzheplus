@@ -103,4 +103,23 @@
             IF(CAST(distance AS UNSIGNED) > 300 * 1000,300 * 1000,CAST(distance AS UNSIGNED)) / 1000 distance
         FROM workout_view
     </select>
+
+    <select id="distanceDistribution" resultType="java.util.Map">
+        SELECT
+            SUM(CAST(up_distance AS UNSIGNED)) / 1000 up,
+            SUM(CAST(flat_distance AS UNSIGNED)) / 1000 flat,
+            SUM(CAST(down_distance AS UNSIGNED)) / 1000 down
+        FROM
+            workout_view;
+    </select>
+
+    <select id="durationSum" resultType="java.util.Map">
+        SELECT
+            SUM(CAST(duration AS UNSIGNED)) sport_duration,
+            SUM(CAST(end_time AS UNSIGNED) - CAST(start_time AS UNSIGNED)) / 1000 on_the_way,
+            (MAX(CAST(end_time AS UNSIGNED)) - MIN(CAST(start_time AS UNSIGNED))) / 1000 days
+        FROM
+            workout_view;
+    </select>
+
 </mapper>

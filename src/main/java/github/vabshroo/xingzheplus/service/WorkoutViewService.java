@@ -15,5 +15,6 @@ public interface WorkoutViewService {
 
     Map<String,Object> distance();
     List<double[]> timeDistance();
+    Map<String,Object> distanceDistribution();
 
 }
